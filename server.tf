@@ -1,4 +1,5 @@
 resource "aws_instance" "nowar" {
+  count                  = var.instances
   ami                    = data.aws_ami.latest_ubuntu.id
   instance_type          = "t3.micro"
   # key_name               = "key"
