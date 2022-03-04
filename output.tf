@@ -1,5 +1,5 @@
 output "instance_id" {
-  value = aws_instance.nowar.id
+  value = aws_instance.nowar[*].id
 }
 
 output "ami_id" {
